@@ -15,7 +15,7 @@ library(ggplot2)
 # DATA IMPORTING AND CLEANING
   
   # We will start with the same fatal crash data set from the Basic Density Heat Mapping code.
-  crashes <-read.csv( text = getURL("https://raw.githubusercontent.com/LMcDiffett/DensityHeatMap/master/Fatal_Crash_Data_Spokane_WA.csv", ssl.verifypeer = FALSE), header = T, stringsAsFactors = F)
+  crashes <-read.csv( text = getURL("https://raw.githubusercontent.com/LMcDiffett/Spatial-Density-Scoring/master/Fatal_Crash_Data_Spokane_WA.csv", ssl.verifypeer = FALSE), header = T, stringsAsFactors = F)
   
   # clean the data in case there are missing or abnormal GPS coordinates
   # we can ensure that no impossible coordinates are present by limiting Lat / Long to -180 <= x <= 180
